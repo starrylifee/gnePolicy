@@ -37,7 +37,7 @@ def load_css():
             background-color: #FFC107 !important; /* 버튼 호버 시 배경색 */
         }
         .stMarkdown a {
-            color: #FFD700; /* 링크 텍스트 색상 */
+            color: #007BFF; /* 링크 텍스트 색상 유지 */
         }
         .stDivider {
             background-color: #FFD700 !important; /* 구분선 색상 */
@@ -134,8 +134,7 @@ def main():
 
     thread_id = st.session_state.thread_id
 
-    st.title("경상남도 교육청 업무협업 추천 챗봇")
-    st.title("(내부직원용)")
+    st.title("경상남도교육청 협업 추천 챗봇")
     for msg in st.session_state.messages:
         st.chat_message(msg["role"]).write(msg["content"])
 

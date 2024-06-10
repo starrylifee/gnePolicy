@@ -136,7 +136,7 @@ def main():
 
     thread_id = st.session_state.thread_id
 
-    st.title("경상남도 교육청 업무분석(내부직원용) 챗봇")
+    st.title("경상남도 교육청 업무분석 챗봇")
     for msg in st.session_state.messages:
         st.chat_message(msg["role"]).write(msg["content"])
 
