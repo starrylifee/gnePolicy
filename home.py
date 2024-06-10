@@ -91,7 +91,8 @@ def main():
     # API 키 리스트
     api_keys = [
         st.secrets["api_key1"], st.secrets["api_key2"], st.secrets["api_key3"],
-        st.secrets["api_key4"], st.secrets["api_key5"], st.secrets["api_key6"]
+        st.secrets["api_key4"], st.secrets["api_key5"], st.secrets["api_key6"],
+        st.secrets["api_key7"], st.secrets["api_key8"], st.secrets["api_key9"]
     ]
 
     # 업데이트된 Assistant ID
