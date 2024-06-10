@@ -7,7 +7,7 @@ def load_css():
     css = """
     <style>
         body, .stApp {
-            background-color: #E3F2FD !important; /* 세련된 옅은 파랑 배경색 */
+            background-color: #FFF9E3 !important; /* 세련된 옅은 노랑 배경색 */
             color: #333333; /* 텍스트 색상 */
             font-family: 'Roboto', sans-serif; /* 폰트 설정 */
         }
@@ -25,7 +25,7 @@ def load_css():
             padding: 10px; /* 내부 여백 */
         }
         .stButton>button {
-            background-color: #007BFF !important; /* 버튼 배경색 */
+            background-color: #FFD700 !important; /* 버튼 배경색 */
             color: #FFFFFF !important; /* 버튼 텍스트 색상 */
             border: none; /* 버튼 테두리 제거 */
             border-radius: 5px; /* 둥근 모서리 */
@@ -34,30 +34,30 @@ def load_css():
             transition: background-color 0.3s ease; /* 배경색 변경 애니메이션 */
         }
         .stButton>button:hover {
-            background-color: #0056b3 !important; /* 버튼 호버 시 배경색 */
+            background-color: #FFC107 !important; /* 버튼 호버 시 배경색 */
         }
         .stMarkdown a {
-            color: #007BFF; /* 링크 텍스트 색상 */
+            color: #FFD700; /* 링크 텍스트 색상 */
         }
         .stDivider {
-            background-color: #007BFF !important; /* 구분선 색상 */
+            background-color: #FFD700 !important; /* 구분선 색상 */
         }
         .stSidebar {
-            background-color: #F8F9FA !important; /* 사이드바 배경색 */
+            background-color: #FFF8DC !important; /* 사이드바 배경색 */
             border-right: 1px solid #CCCCCC; /* 사이드바 오른쪽 테두리 */
         }
         .stSidebar .stButton>button {
-            background-color: #17A2B8 !important; /* 사이드바 버튼 배경색 */
+            background-color: #FFD700 !important; /* 사이드바 버튼 배경색 */
             color: #FFFFFF !important; /* 사이드바 버튼 텍스트 색상 */
         }
         .stSidebar .stButton>button:hover {
-            background-color: #138496 !important; /* 사이드바 버튼 호버 시 배경색 */
+            background-color: #FFC107 !important; /* 사이드바 버튼 호버 시 배경색 */
         }
         .stChatMessage.assistant {
-            border-left: 5px solid #007BFF; /* assistant 메시지 왼쪽 테두리 */
+            border-left: 5px solid #FFD700; /* assistant 메시지 왼쪽 테두리 */
         }
         .stChatMessage.user {
-            border-left: 5px solid #17A2B8; /* user 메시지 왼쪽 테두리 */
+            border-left: 5px solid #FFC107; /* user 메시지 왼쪽 테두리 */
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -135,7 +135,7 @@ def main():
     thread_id = st.session_state.thread_id
 
     st.title("경상남도 교육청 업무협업 추천 챗봇")
-    st.title("(내부직원용))")
+    st.title("(내부직원용)")
     for msg in st.session_state.messages:
         st.chat_message(msg["role"]).write(msg["content"])
 
